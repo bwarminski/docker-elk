@@ -3,7 +3,7 @@ elasticsearch:
   ports:
     - "9200:9200"
   volumes:
-    - /home/docker/elasticsearch/data:/usr/share/elasticsearch/data
+    - /mnt/sda1/elasticsearch/data:/usr/share/elasticsearch/data
 logstash:
   image: logstash:latest
   command: logstash -f /etc/logstash/conf.d/logstash.conf
